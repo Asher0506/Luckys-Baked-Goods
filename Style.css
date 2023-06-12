@@ -13,6 +13,16 @@
   border-radius: 5px;
 }
 
+.d-flex:hover {
+  background-color: #5f635f;
+  color: #ffffff;
+  border-radius: 5px;
+}
 
+.btn1:hover {
+  background-color: #5f635f;
+  color: #ffffff;
+  border-radius: 5px;
+}
 
 
