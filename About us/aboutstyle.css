@@ -7,9 +7,9 @@
 
 .wrapper{
     width: 100%;
-    min-height: 100vh;
+    min-height: 85vh;
     overflow: hidden;
-    background-color: #ddd;
+    background-color: #cac8c8;
 }
 
 .row{
@@ -81,107 +81,97 @@
 } 
 
 
-.team-section{
+.webteam{
     width: 100%;
+    padding: 60px;
+    min-height: 85vh;
+    overflow: hidden;
+    background-color: #cac8c8;
 }
 
-.team-section .teamcontainer{
-    width: 80%;
-    margin: auto;
-
-}
-
-.team-section .teamcontainer .teamrow{
-    width: 60%;
-    margin: auto;
-}
-
-.team-section .teamcontainer .teamrow .teamtitle{
-    text-align: center; 
-    margin-top: 50px;
-}
-
-.team-section .teamcontainer .teamrrow .teamtitle h1{
-    font-size: 35px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: #eb6234;
-}
-
-.team-section .teamcontainer .teamrrow .teamtitle p{
-    font-size: 18px;
-    font-family: sans-serif;
-    margin: 30px 0px;
-    color: #a3a3a3;
-}
-
-.team-section .teamcontainer .team-card{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-
-.team-section .teamcontainer .team-card .teamcard{
-    width: 100%;
-    background-color: #fafafa;
+.teamrow {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    cursor: pointer;
-}
-
-.team-section .teamcontainer .team-card .teamcard .team-image :hover{
-    background-color: #f3f3f3;
-    transition: 0.3s;
-}
-
-.team-section .teamcontainer .team-card .teamcard .team-image img{
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    border: 3px solid #0e0d0d;
-}
-
-.team-section .teamcontainer .team-card .teamcard .teamcontent{
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    text-align: center;
+  }
+  .teamcolumn {
+    width: 100%;
+    padding: 0.5em 0;
+  }
+  h1 {
     width: 100%;
     text-align: center;
-}
+    font-size: 3.5em;
+    color: #1f003b;
+  }
+  .teamcard {
+    box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+    padding: 3.5em 1em;
+    border-radius: 0.6em;
+    color: #1f003b;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #ffffff;
+  }
+  .teamcard .teamimg-container {
+    width: 15em;
+    height: 15em;
+    background-color: #0c0b0e;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+  }
+  .teamcard img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  .teamcard h3 {
+    font-weight: 500;
+  }
+  .teamcard p {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+  }
+  .icons {
+    width: 50%;
+    min-width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .teamcard a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4em;
+  }
+  .teamcard:hover {
+    background: rgb(165, 162, 162);
+    color: #ffffff;
+  }
+  .teamcard:hover .teamimg-container {
+    transform: scale(1.15);
+  }
+  @media screen and (min-width: 768px) {
+    section {
+      padding: 1em 7em;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    section {
+      padding: 1em;
+    }
+    .teamcard {
+      padding: 5em 1em;
+    }
+    .teamcolumn {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+      padding: 0 1em;
+    }
+  }
+  
 
 
-.team-section .teamcontainer .team-card .teamcard .teamcontent h3{
-    font-size: 27px;
-    margin-top: 10px;
-    letter-spacing: 1.5px;
-    color: #639ab8;
-}
-
-.team-section .teamcontainer .team-card .teamcard .teamcontent h4{
-    font-size: 17px;
-    margin-top:  10px;
-    letter-spacing: 1.5px;
-    color: #6e6e6e
-}
-
-.team-section .teamcontainer .team-card .teamcard .teamcontent p{
-    font-size: 15px;
-    margin:  16px;
-    line-height: 1.5;
-    color: #6c6c6c
-}
-
-
-@media  screen and (max-width: 900px ){
-    .team-section .teamcontainer .team-card{
-        grid-template-columns: (2, 1fr);
-    } 
-}
-
-@media  screen and (max-width: 768px ){
-    .team-section .teamcontainer .team-card{
-        grid-template-columns: 1fr;
-    } 
-}
